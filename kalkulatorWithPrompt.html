@@ -1,0 +1,48 @@
+<html>
+  <head>
+    <title>Membuat program kalkulator sederhana javascript dengan prompt</title>
+  </head>
+  <script language="JavaScript">
+    function penjumlahan() {
+      var a1 = prompt("Masukkan angka pertama", 0);
+      var a2 = prompt(
+        "angka " + a1 + " mau ditambahkan dengan angka berapa?",
+        0
+      );
+      c = eval(a1) + eval(a2);
+      document.write("Hasil dari " + a1 + " + " + a2 + " = " + c);
+    }
+    function pengurangan() {
+      var a1 = prompt("Masukkan angka pertama :", 0);
+      var a2 = prompt("angka " + a1 + " mau dikurangi dengan angka berapa?", 0);
+      c = eval(a1) - eval(a2);
+      document.write("Hasil dari " + a1 + " - " + a2 + " = " + c);
+    }
+    function perkalian() {
+      var a1 = prompt("Masukkan angka pertama :", 0);
+      var a2 = prompt("angka " + a1 + " mau dikalikan dengan angka berapa?", 0);
+      c = eval(a1) * eval(a2);
+      document.write("Hasil dari " + a1 + "x" + a2 + "=" + c);
+    }
+    function pembagian() {
+      var a1 = prompt("Masukkan angka pertama :", 0);
+      var a2 = prompt("angka " + a1 + " mau dibagi dengan angka berapa?", 0);
+      c = eval(a1) / eval(a2);
+      document.write("Hasil dari" + a1 + "/" + a2 + "=" + c);
+    }
+  </script>
+  <body onload="alert('Silahkan klik tombol untuk memulai perhitungan')">
+    <a
+      href=""
+      onMouseOver="alert('copyleft@nasrul09')"
+      onMouseOut="style.background='#CC66FF'"
+    >
+      <h1>Program kalkulator dengan Prompt</h1>
+    </a>
+    <br /><br />
+    <input type="button" value="Penjumlahan" onClick="penjumlahan()" />
+    <input type="button" value="Pengurangan" onClick="pengurangan()" />
+    <input type="button" value="Perkalian" onClick="perkalian()" />
+    <input type="button" value="Pembagian" onClick="pembagian()" />
+  </body>
+</html>

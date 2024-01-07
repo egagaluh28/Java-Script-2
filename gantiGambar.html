@@ -1,0 +1,24 @@
+<html>
+  <head>
+    <title>Ganti Gambar</title>
+    <script language="javascript">
+      function ganti() {
+        alert("Ini gambar " + gambar.pilih.value);
+        document.images.hewan.src =
+          gambar.pilih.options[gambar.pilih.selectedIndex].value;
+      }
+    </script>
+  </head>
+
+  <body>
+    <form name="gambar">
+      <select name="pilih" onchange="ganti()">
+        <option value="Harimau.jpg">harimau</option>
+        <option value="serigala.jpg">serigala</option>
+        <option value="orang utan.jpg">orang utan</option>
+        <option value="singa.jpg">singa</option>
+      </select>
+    </form>
+    <img src="Harimau.jpg" width="300" border="0" alt="" name="hewan" />
+  </body>
+</html>

@@ -1,0 +1,20 @@
+<body>
+  <head>
+    <title>isi nama</title>
+    <script type="text/javascript">
+      function salam() {
+        var nama = document.getElementById("inputan");
+        if (nama.value == "") alert("Isi nama dulu dong!!");
+        else alert("Ahlan ya " + nama.value);
+      }
+    </script>
+  </head>
+
+  <form>
+    nama<input type="text" id="inputan" /><input
+      type="button"
+      OnClick="salam()"
+      value="go"
+    />
+  </form>
+</body>

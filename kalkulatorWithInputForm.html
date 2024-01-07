@@ -1,0 +1,64 @@
+<html>
+  <title>
+    Membuat program kalkulator sederhana menggunakan inputan kalkulator
+  </title>
+  <script language="JavaScript">
+    function tambah() {
+      a = eval(kalkulator.a.value);
+      b = eval(kalkulator.b.value);
+      c = a + b;
+      kalkulator.hasil.value = c;
+    }
+    function kurang() {
+      a = eval(kalkulator.a.value);
+      b = eval(kalkulator.b.value);
+      c = a - b;
+      kalkulator.hasil.value = c;
+    }
+    function kali() {
+      a = eval(kalkulator.a.value);
+      b = eval(kalkulator.b.value);
+      c = a * b;
+      kalkulator.hasil.value = c;
+    }
+    function bagi() {
+      a = eval(kalkulator.a.value);
+      b = eval(kalkulator.b.value);
+      c = a / b;
+      kalkulator.hasil.value = c;
+    }
+    function pangkat() {
+      a = eval(kalkulator.a.value);
+      b = eval(kalkulator.b.value);
+      c = Math.pow(a, b);
+      kalkulator.hasil.value = c;
+    }
+    function kosong() {
+      kalkulator.a.focus();
+      kalkulator.a.value = "";
+      kalkulator.b.value = "";
+      kalkulator.hasil.value = "";
+    }
+  </script>
+  <body onload="kosong()">
+    <center>
+      <font size="5">Program Kalkulator dengan isian kalkulator</font>
+      <hr size="5" color="red" />
+      <form name="kalkulator">
+        <pre> 
+Angka 1 <input type="text" name="a"> 
+Angka 2 <input type="text" name="b"> 
+Hasil <input type="text" name="hasil" disabled="false"> 
+</pre>
+        <hr size="2" color="blue" />
+        <input type="button" value=" + " onClick="tambah()" />
+        <input type="button" value=" - " onClick="kurang()" />
+        <input type="button" value=" x " onClick="kali()" />
+        <input type="button" value=" / " onClick="bagi()" />
+        <input type="button" value=" ^ " onClick="pangkat()" />
+        <input type="button" value="Clear" onClick="kosong()" /><br />
+        <br />copyleft@nasrul2009<br />
+      </form>
+    </center>
+  </body>
+</html>

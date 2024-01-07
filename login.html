@@ -1,0 +1,59 @@
+<BODY> 
+    <HEAD><TITLE>Login Masuk</TITLE> 
+    <script type="text/javascript"> 
+    function salam() 
+{ 
+    var nama = document.getElementById("inputan"); 
+    var sandi = document.getElementById("pass");
+
+    if (nama.value =="nasrul" && sandi.value=="fawwaz") 
+    { 
+        window.location="http://www.nurulfikri.com/"; 
+    } 
+    if (nama.value =="" && sandi.value=="") 
+    { 
+        alert("Isi nama & passwd dulu dong!!") 
+        return 
+    } 
+    if (nama.value !="nasrul" && sandi.value!="fawwaz") 
+    { 
+        alert("Maaf !! User & Password anda salah") 
+        return 
+    } 
+} 
+    function kosong() 
+{ 
+    var nama = document.getElementById("inputan"); 
+    var sandi = document.getElementById("pass"); 
+    nama.value="" 
+    sandi.value="" 
+} 
+    </script> 
+</HEAD> 
+<Body> 
+<form> 
+<table cellpadding="10" align="center" bgcolor="Silver"> 
+    <tr> 
+        <td colspan="2" bgcolor="Gray" align="center">Form Login</td>
+    </tr> 
+    <tr> 
+        <td>nama</td> 
+    <td><input type="text" id="inputan"></td> 
+    </tr> 
+    <tr>
+        <td>password</td> 
+    <td><input type="password" id="pass"></td> 
+    </tr> 
+    <tr>  
+    
+    
+        <td align="center" colspan="2"> 
+            <input type="button" onclick="salam()" value="masuk"> 
+            <input type="button" onclick="kosong()" value="batal"> 
+    </tr> 
+</table> 
+</form> 
+</BODY> 
+</html> 
+
+    
